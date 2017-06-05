@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  vault:
+    image: vault:0.7.2
+    networks:
+      - vault
+    ports:
+      - "8200:8200"
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: dz57J7Qz6RZbyxP68an6TD636H6tnRxxg5N6kXmdjp
+    cap_add:
+      - IPC_LOCK
+    command:
+      - server
+      - -dev
+      - -config=/vault/config/
+      - -log-level=debug
+networks:
+  vault:
