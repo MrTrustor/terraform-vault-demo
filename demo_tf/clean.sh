@@ -10,4 +10,4 @@ function cmd() {
 
 cmd "Terraform destroy" "terraform destroy"
 
-cmd "Clean everything" "rm -rf .terraform/"
+cmd "Clean everything" "rm -rf .terraform/ *tfstate *tfstate.backup"

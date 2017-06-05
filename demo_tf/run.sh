@@ -11,6 +11,6 @@ function cmd() {
 
 cmd "Initialize terraform" "terraform init"
 
-cmd "Terraform plan" "terraform plan -out=my.plan"
+cmd "Plan the modifications to do and write them in a file" "terraform plan -out=my.plan"
 
-cmd "Terraform apply" "terraform apply my.plan"
+cmd "Apply the previously planned modifications" "terraform apply my.plan"
