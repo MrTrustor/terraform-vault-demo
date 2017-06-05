@@ -8,6 +8,8 @@ function cmd() {
   read -p ""
 }
 
+echo "=> Check that Docker VM has the right date! <="
+
 cmd "Launch Vault in dev mod" "docker-compose up -d"
 
 cmd "export VAULT_ADDR" "export VAULT_ADDR=http://localhost:8200"
