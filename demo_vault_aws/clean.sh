@@ -1,3 +1,6 @@
+VAULT_ADDR=http://localhost:8200 VAULT_TOKEN=dz57J7Qz6RZbyxP68an6TD636H6tnRxxg5N6kXmdjp terraform destroy
+rm -rf .terraform/ *tfstate *tfstate.backup
+
 export AWS_DEFAULT_PROFILE=oxalide
 export AWS_PROFILE=oxalide
 

@@ -42,5 +42,14 @@ cd demo_vault_aws
 ./run.sh
 ```
 
-To clean up everything, change the `AWS_DEFAULT_PROFILE` variables in the `clean.sh`
+## Demo Terraform + Vault + AWS
+
+```bash
+./run_terraform.sh
+```
+
+You can then connect to the newly created instance and look at the file
+`/home/admin/secret.txt`.
+
+To clean up the last two demos, change the `AWS_DEFAULT_PROFILE` variables in the `clean.sh`
 script and then run it.
